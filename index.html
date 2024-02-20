@@ -46,6 +46,7 @@
   text-transform: uppercase;
   padding: 1rem 2rem;
   width: calc(50% + 1px);
+
 }
 .timeline li:after {
   background: #231F21;
@@ -71,8 +72,8 @@
 
 
     </style>
-    <script type="module" crossorigin src="./assets/index-c23210a1.js"></script>
-    <link rel="stylesheet" href="./assets/index-fd951406.css">
+    <script type="module" crossorigin src="./assets/index-8182bf54.js"></script>
+    <link rel="stylesheet" href="./assets/index-1de70f7a.css">
   </head>
   <body class="ok" style="position: relative;overflow-x: hidden;">
 
@@ -153,7 +154,7 @@
 
 
         <div class="autre">
-          <div class="blocInformations" style="width: 470%;display: flex;background-color: #d9d9d9;gap:10rem;position:fixed;left:100%;top:0;z-index: 2;align-items: center;">
+          <div class="blocInformations" style="width: 470%;display: flex;background-color: #e6ebe3;gap:10rem;position:fixed;left:100%;top:0;z-index: 2;align-items: center;">
 
             <div style="width: 33.33%;display: flex;justify-content: space-between;position: relative;">
               <div  style="width:50%;display: flex;flex-direction: column; align-items: center;justify-content: center;">
@@ -175,13 +176,13 @@
 
                   <div class="timeline">
                     <div class="circle"></div>
-                    <ul>
-                      <li><em>Etape 1</em> <strong>MEET</strong></li>
-                      <li><em>Etape 2</em> <strong>PLAN</strong></li>
-                      <li><em>Etape 3</em> <strong>DESIGN</strong></li>
-                      <li><em>Etape 4</em> <strong>DEVELOP</strong></li>
-                      <li><em>Etape 5</em> <strong>TESTING</strong></li>
-                      <li><em>Etape 6</em> <strong>DELIVERY</strong></li>
+                    <ul >
+                      <li class="listeEtape"><em style="transform: translateX(-50%);opacity: 0;">Etape 1</em> <strong>MEET</strong></li>
+                      <li class="listeEtape"><em style="transform: translateX(50%);opacity: 0;">Etape 2</em> <strong>PLAN</strong></li>
+                      <li class="listeEtape"><em style="transform: translateX(-50%);opacity: 0;">Etape 3</em> <strong>DESIGN</strong></li>
+                      <li class="listeEtape"><em style="transform: translateX(50%);opacity: 0;">Etape 4</em> <strong>DEVELOP</strong></li>
+                      <li class="listeEtape"><em style="transform: translateX(-50%);opacity: 0;">Etape 5</em> <strong>TESTING</strong></li>
+                      <li class="listeEtape"><em style="transform: translateX(50%);opacity: 0;">Etape 6</em> <strong>DELIVERY</strong></li>
                     </ul>
                     <div class="circle"></div>
                   </div>
@@ -247,12 +248,9 @@
 
                 <div style="position: relative;display: flex;flex-direction: column;gap:1rem;padding-top: 3rem;">
 
+                  <div >
 
-
-
-                  <div>
-
-                    <div class="point"></div>
+                    <div class="point point1"></div>
     
                     <div class="informationsSite">
                         <p>The importance of idea</p>
@@ -264,9 +262,9 @@
 
                     </div>
                   </div>
-                  <div>
+                  <div  >
 
-                  <div class="point"></div>
+                  <div class="point point2"></div>
 
                   <div class="informationsSite">
                       <p>The importance of idea</p>
@@ -278,9 +276,9 @@
 
                   </div>
                   </div>
-                <div>
+                  <div>
 
-                <div class="point"></div>
+                <div class="point point3"></div>
 
                 <div class="informationsSite">
                     <p>The importance of idea</p>
@@ -291,7 +289,8 @@
                 <div style="height: 2px;width: 100%;background-color: #393939;">
 
                 </div>
-                </div>
+                  </div>
+
                 </div>
 
               </div>
@@ -303,13 +302,14 @@
               <div class="sitePresentation" style="width: 100vw;position: relative;height: 100%;">
 
 
-                    <h3 style="position: absolute;font-size: 11rem;margin-top: -28rem;left:30%;mix-blend-mode: difference;color: white;z-index: 2;letter-spacing: -0.5rem;"><span>S</span>ite <span>V</span>itrine</h3>
+
+                    <h3 class="titleVitrine" style="position: absolute;font-size: 11rem;margin-top: -28rem;left:30%;mix-blend-mode: difference;color: white;z-index: 2;letter-spacing: -0.5rem;transform: translateY(-50%);opacity: 0;"><span>S</span>ite <span>V</span>itrine</h3>
 
 
                 <div style="width: 50%;display: flex;align-items: center;position:relative;height: 100%;">
 
-                  <div class="square1" style="background-color: #000000;display: flex;align-items: end;min-height: 22rem;margin-top: auto;border-radius: 0.2rem;">
-                      <p style="color: rgb(125, 125, 125);margin-top: auto;">
+                  <div class="square1" style="background-color: #000000;display: flex;align-items: end;min-height: 22rem;margin-top: auto;border-radius: 0.2rem;overflow: hidden;">
+                      <p class="textVitrine" style="color: rgb(125, 125, 125);margin-top: auto;transform: translateX(-50%);opacity: 0;">
                         Types of marble-effect porcelain stoneware tiles
                           We offer a wide range of marble-effect porcelain stoneware collections available in different colours - including white, beige, grey and black - and in different sizes and finishes. Some of our collections that feature this fascinating effect are:
                       </p>
@@ -317,8 +317,8 @@
                   </div>
                 </div>
 
-                <div style="width: 50%;height: 100%;display: flex;align-items: end;justify-content: end;padding: 0 2rem 1rem 0;flex-direction: column;">
-                  <div style=" border: 1px solid #000; padding: 8px; font-family: Arial, sans-serif;font-size: 1.5rem;margin-bottom: 5rem;">
+                <div  style="width: 50%;height: 100%;display: flex;align-items: end;justify-content: end;padding: 0 2rem 1rem 0;flex-direction: column;overflow: hidden;">
+                  <div class="tableau" style=" border: 1px solid #000; padding: 8px; font-family: Arial, sans-serif;font-size: 1.5rem;margin-bottom: 5rem;transform: translateX(50%);">
                     <div style="border-bottom: 1px solid #000; padding: 8px;">
                       <div style="color: #555; margin-bottom: 4px;">Vandaag open tot 01:00</div>
                       <div style="color: #555;">Meent 108, 3011 JR Rotterdam</div>
@@ -345,13 +345,14 @@
               <div class="sitePresentation" style="width: 100vw;position: relative;height: 100%;">
 
 
-                <h3 style="position: absolute;font-size: 11rem;margin-top: -28rem;left: 19.5%;mix-blend-mode: difference;color: white;z-index: 2;letter-spacing: -0.5rem;"><span>S</span>ite <span>E-</span>commerce</h3>
+
+                <h3 class="titleVitrine2" style="position: absolute;font-size: 11rem;margin-top: -28rem;left:30%;mix-blend-mode: difference;color: white;z-index: 2;letter-spacing: -0.5rem;transform: translateY(-50%);opacity: 0;"><span>S</span>ite <span>V</span>itrine</h3>
 
 
             <div style="width: 50%;display: flex;align-items: center;position:relative;height: 100%;">
 
-              <div class="square2" style="background-color: #000000;display: flex;align-items: end;min-height: 22rem;margin-top: auto;border-radius: 0.2rem;">
-                  <p style="color: rgb(125, 125, 125);margin-top: auto;">
+              <div class="square2" style="background-color: #000000;display: flex;align-items: end;min-height: 22rem;margin-top: auto;border-radius: 0.2rem;overflow: hidden;">
+                  <p class="textVitrine2" style="color: rgb(125, 125, 125);margin-top: auto;transform: translateX(-50%);opacity: 0;">
                     Types of marble-effect porcelain stoneware tiles
                       We offer a wide range of marble-effect porcelain stoneware collections available in different colours - including white, beige, grey and black - and in different sizes and finishes. Some of our collections that feature this fascinating effect are:
                   </p>
@@ -359,23 +360,26 @@
               </div>
             </div>
 
-            <div style="width: 50%;height: 100%;display: flex;align-items: end;justify-content: end;padding: 0 2rem 1rem 0;flex-direction: column;">
-              <!--<div style="max-width: 360px; border: 1px solid #000; padding: 8px; font-family: Arial, sans-serif;">
+            <div  style="width: 50%;height: 100%;display: flex;align-items: end;justify-content: end;padding: 0 2rem 1rem 0;flex-direction: column;overflow: hidden;">
+              <div class="tableau2" style=" border: 1px solid #000; padding: 8px; font-family: Arial, sans-serif;font-size: 1.5rem;margin-bottom: 5rem;transform: translateX(50%);">
                 <div style="border-bottom: 1px solid #000; padding: 8px;">
                   <div style="color: #555; margin-bottom: 4px;">Vandaag open tot 01:00</div>
                   <div style="color: #555;">Meent 108, 3011 JR Rotterdam</div>
                 </div>
                 <div style="border-bottom: 1px solid #000; padding: 8px; display: flex; justify-content: space-between; align-items: center;">
                   <span style="font-weight: bold;">RESERVEER</span>
-                  <span>&rarr;</span>
+
                 </div>
                 <div style="padding: 8px; display: flex; justify-content: space-between; align-items: center;">
                   <span style="font-weight: bold;">BEKIJK MENUKAART</span>
-                  <span>&darr;</span>
-                </div>
-              </div>-->
 
-              <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" height="3rem"  viewBox="0 0 512 243.58"><path fill-rule="nonzero" d="M373.57 0 512 120.75 371.53 243.58l-20.92-23.91 94.93-83L0 137.09v-31.75l445.55-.41-92.89-81.02z"/></svg>
+                </div>
+              </div>
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" height="3rem"  viewBox="0 0 512 243.58"><path fill-rule="nonzero" d="M373.57 0 512 120.75 371.53 243.58l-20.92-23.91 94.93-83L0 137.09v-31.75l445.55-.41-92.89-81.02z"/></svg>
+
+
             </div>
 
 
@@ -385,13 +389,14 @@
           <div class="sitePresentation" style="width: 100vw;position: relative;height: 100%;">
 
 
-            <h3 style="position: absolute;font-size: 11rem;margin-top: -28rem;left:30%;mix-blend-mode: difference;color: white;z-index: 2;letter-spacing: -0.5rem;"><span>S</span>ite <span>P</span>ersonnel</h3>
+
+            <h3 class="titleVitrine3" style="position: absolute;font-size: 11rem;margin-top: -28rem;left:30%;mix-blend-mode: difference;color: white;z-index: 2;letter-spacing: -0.5rem;transform: translateY(-50%);opacity: 0;"><span>S</span>ite <span>V</span>itrine</h3>
 
 
         <div style="width: 50%;display: flex;align-items: center;position:relative;height: 100%;">
 
-          <div class="square3" style="background-color: #000000;display: flex;align-items: end;min-height: 22rem;margin-top: auto;border-radius: 0.2rem;">
-              <p style="color: rgb(125, 125, 125);margin-top: auto;">
+          <div class="square3" style="background-color: #000000;display: flex;align-items: end;min-height: 22rem;margin-top: auto;border-radius: 0.2rem;overflow: hidden;">
+              <p class="textVitrine3" style="color: rgb(125, 125, 125);margin-top: auto;transform: translateX(-50%);opacity: 0;">
                 Types of marble-effect porcelain stoneware tiles
                   We offer a wide range of marble-effect porcelain stoneware collections available in different colours - including white, beige, grey and black - and in different sizes and finishes. Some of our collections that feature this fascinating effect are:
               </p>
@@ -399,28 +404,33 @@
           </div>
         </div>
 
-        <div style="width: 50%;height: 100%;display: flex;align-items: end;justify-content: end;padding: 0 2rem 1rem 0;flex-direction: column;">
-          <!--<div style="max-width: 360px; border: 1px solid #000; padding: 8px; font-family: Arial, sans-serif;">
+        <div  style="width: 50%;height: 100%;display: flex;align-items: end;justify-content: end;padding: 0 2rem 1rem 0;flex-direction: column;overflow: hidden;">
+          <div class="tableau3" style=" border: 1px solid #000; padding: 8px; font-family: Arial, sans-serif;font-size: 1.5rem;margin-bottom: 5rem;transform: translateX(50%);">
             <div style="border-bottom: 1px solid #000; padding: 8px;">
               <div style="color: #555; margin-bottom: 4px;">Vandaag open tot 01:00</div>
               <div style="color: #555;">Meent 108, 3011 JR Rotterdam</div>
             </div>
             <div style="border-bottom: 1px solid #000; padding: 8px; display: flex; justify-content: space-between; align-items: center;">
               <span style="font-weight: bold;">RESERVEER</span>
-              <span>&rarr;</span>
+
             </div>
             <div style="padding: 8px; display: flex; justify-content: space-between; align-items: center;">
               <span style="font-weight: bold;">BEKIJK MENUKAART</span>
-              <span>&darr;</span>
-            </div>
-          </div>-->
 
-          <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" height="3rem"  viewBox="0 0 512 243.58"><path fill-rule="nonzero" d="M373.57 0 512 120.75 371.53 243.58l-20.92-23.91 94.93-83L0 137.09v-31.75l445.55-.41-92.89-81.02z"/></svg>
+            </div>
+          </div>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" height="3rem"  viewBox="0 0 512 243.58"><path fill-rule="nonzero" d="M373.57 0 512 120.75 371.53 243.58l-20.92-23.91 94.93-83L0 137.09v-31.75l445.55-.41-92.89-81.02z"/></svg>
+
+
         </div>
 
 
 
       </div>
+
+
           </div>
 
           </div>
@@ -443,10 +453,10 @@
 
 
           <div style="width: 50%;">
-                <div class="texte2" style="height: 100vh;display: flex;flex-direction: column;justify-content: center;padding:0 10rem 0 5rem">
-                    <h3 style="font-size: 5rem;font-family: Lausane;margin-bottom: 2rem;"> <span style="font-family: Sometimes;">A</span>n idea is Born</h3>
+                <div class="texte2" style="height: 100vh;display: flex;flex-direction: column;justify-content: center;padding:0 10rem 0 5rem;overflow: hidden;">
+                    <h3 class="titleChapitre" style="transform: translateX(-25%);opacity: 0;font-size: 5rem;font-family: Lausane;margin-bottom: 2rem;"> <span style="font-family: Sometimes;">A</span>n idea is Born</h3>
 
-                    <div style="display: flex;flex-direction: column;gap:1rem">
+                    <div class="textChapitre" style="display: flex;flex-direction: column;gap:1rem;transform: translateX(-25%);opacity: 0;">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, tempora nesciunt placeat delectus perferendis facere, similique quidem voluptates explicabo aspernatur ab, dolor sit numquam a deleniti illum sed culpa dolorum?
                         Vero veniam totam veritatis quae adipisci sed ipsum consectetur harum eligendi. Animi accusantium molestiae, doloremque est facilis quod. Consequatur cum dignissimos atque eaque fuga minus reprehenderit, iusto mollitia neque cumque?</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, tempora nesciunt placeat delectus perferendis facere, similique quidem voluptates explicabo aspernatur ab, dolor sit numquam a deleniti illum sed culpa dolorum?
@@ -458,10 +468,10 @@
                 </div>
 
 
-                <div class="texte3"  style="height: 100vh;display: flex;flex-direction: column;justify-content: center;padding:0 10rem 0 5rem">
-                  <h3 style="font-size: 5rem;font-family: Lausane;margin-bottom: 2rem;"> <span style="font-family: Sometimes;">A</span>n idea is Born</h3>
+                <div class="texte3"  style="height: 100vh;display: flex;flex-direction: column;justify-content: center;padding:0 10rem 0 5rem;overflow: hidden;">
+                  <h3 class="titleChapitre2" style="opacity:0;transform: translateX(-25%);font-size: 5rem;font-family: Lausane;margin-bottom: 2rem;"> <span style="font-family: Sometimes;">A</span>n idea is Born</h3>
 
-                  <div style="display: flex;flex-direction: column;gap:1rem">
+                  <div  class="textChapitre2" style="opacity:0;transform: translateX(-25%);display: flex;flex-direction: column;gap:1rem">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, tempora nesciunt placeat delectus perferendis facere, similique quidem voluptates explicabo aspernatur ab, dolor sit numquam a deleniti illum sed culpa dolorum?
                       Vero veniam totam veritatis quae adipisci sed ipsum consectetur harum eligendi. Animi accusantium molestiae, doloremque est facilis quod. Consequatur cum dignissimos atque eaque fuga minus reprehenderit, iusto mollitia neque cumque?</p>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, tempora nesciunt placeat delectus perferendis facere, similique quidem voluptates explicabo aspernatur ab, dolor sit numquam a deleniti illum sed culpa dolorum?
@@ -473,10 +483,10 @@
               </div>
 
 
-              <div class="texte4"   style="height: 100vh;display: flex;flex-direction: column;justify-content: center;padding:0 10rem 0 5rem">
-                <h3 style="font-size: 5rem;font-family: Lausane;margin-bottom: 2rem;"> <span style="font-family: Sometimes;">A</span>n idea is Born</h3>
+              <div class="texte4"   style="height: 100vh;display: flex;flex-direction: column;justify-content: center;padding:0 10rem 0 5rem;overflow: hidden;">
+                <h3 class="titleChapitre3" style="opacity:0;transform: translateX(-25%);font-size: 5rem;font-family: Lausane;margin-bottom: 2rem;"> <span style="font-family: Sometimes;">A</span>n idea is Born</h3>
 
-                <div style="display: flex;flex-direction: column;gap:1rem">
+                <div  class="textChapitre3" style="opacity:0;transform: translateX(-25%);display: flex;flex-direction: column;gap:1rem">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, tempora nesciunt placeat delectus perferendis facere, similique quidem voluptates explicabo aspernatur ab, dolor sit numquam a deleniti illum sed culpa dolorum?
                     Vero veniam totam veritatis quae adipisci sed ipsum consectetur harum eligendi. Animi accusantium molestiae, doloremque est facilis quod. Consequatur cum dignissimos atque eaque fuga minus reprehenderit, iusto mollitia neque cumque?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, tempora nesciunt placeat delectus perferendis facere, similique quidem voluptates explicabo aspernatur ab, dolor sit numquam a deleniti illum sed culpa dolorum?
@@ -488,10 +498,10 @@
             </div>
 
 
-            <div class="texte5" style="height: 100vh;display: flex;flex-direction: column;justify-content: center;padding:0 10rem 0 5rem">
-              <h3 style="font-size: 5rem;font-family: Lausane;margin-bottom: 2rem;"> <span style="font-family: Sometimes;">A</span>n idea is Born</h3>
+            <div class="texte5" style="height: 100vh;display: flex;flex-direction: column;justify-content: center;padding:0 10rem 0 5rem;overflow: hidden;">
+              <h3 class="titleChapitre4" style="opacity:0;transform: translateX(-25%);font-size: 5rem;font-family: Lausane;margin-bottom: 2rem;"> <span style="font-family: Sometimes;">A</span>n idea is Born</h3>
 
-              <div style="display: flex;flex-direction: column;gap:1rem">
+              <div  class="textChapitre4" style="opacity:0;transform: translateX(-25%);display: flex;flex-direction: column;gap:1rem">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, tempora nesciunt placeat delectus perferendis facere, similique quidem voluptates explicabo aspernatur ab, dolor sit numquam a deleniti illum sed culpa dolorum?
                   Vero veniam totam veritatis quae adipisci sed ipsum consectetur harum eligendi. Animi accusantium molestiae, doloremque est facilis quod. Consequatur cum dignissimos atque eaque fuga minus reprehenderit, iusto mollitia neque cumque?</p>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, tempora nesciunt placeat delectus perferendis facere, similique quidem voluptates explicabo aspernatur ab, dolor sit numquam a deleniti illum sed culpa dolorum?
@@ -503,10 +513,10 @@
           </div>
 
 
-          <div  class="texte6"  style="height: 100vh;display: flex;flex-direction: column;justify-content: center;padding:0 10rem 0 5rem">
-            <h3 style="font-size: 5rem;font-family: Lausane;margin-bottom: 2rem;"> <span style="font-family: Sometimes;">A</span>n idea is Born</h3>
+          <div  class="texte6"  style="height: 100vh;display: flex;flex-direction: column;justify-content: center;padding:0 10rem 0 5rem;overflow: hidden;">
+            <h3 class="titleChapitre5" style="opacity:0;transform: translateX(-25%);font-size: 5rem;font-family: Lausane;margin-bottom: 2rem;"> <span style="font-family: Sometimes;">A</span>n idea is Born</h3>
 
-            <div style="display: flex;flex-direction: column;gap:1rem">
+            <div  class="textChapitre5" style="opacity:0;transform: translateX(-25%);display: flex;flex-direction: column;gap:1rem">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, tempora nesciunt placeat delectus perferendis facere, similique quidem voluptates explicabo aspernatur ab, dolor sit numquam a deleniti illum sed culpa dolorum?
                 Vero veniam totam veritatis quae adipisci sed ipsum consectetur harum eligendi. Animi accusantium molestiae, doloremque est facilis quod. Consequatur cum dignissimos atque eaque fuga minus reprehenderit, iusto mollitia neque cumque?</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, tempora nesciunt placeat delectus perferendis facere, similique quidem voluptates explicabo aspernatur ab, dolor sit numquam a deleniti illum sed culpa dolorum?
